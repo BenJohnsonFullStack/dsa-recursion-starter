@@ -1,23 +1,23 @@
-class stack {
-    constructor() {
-
-    }
-    push(value) {
-
-    }
-    pop() {
-
-    }
+class Student {
+  constructor(name, age, ssn) {
+    this.name = name;
+    this.age = age;
+    this.ssn = ssn;
   }
 
-  // Test cases:
-  const myStack = new stack
-  myStack.push(3)
-  myStack.push(6)
-  myStack.push(9)
-  console.log(myStack.pop()) // 9
-  console.log(myStack.pop()) // 6
-  console.log(myStack.pop()) // 3
+  move = (direction) => {};
+
+  eat = (food) => {};
+}
+
+// Test cases:
+const myStack = new stack();
+myStack.push(3);
+myStack.push(6);
+myStack.push(9);
+console.log(myStack.pop()); // 9
+console.log(myStack.pop()); // 6
+console.log(myStack.pop()); // 3
 
 // Using a JavaScript array, implement a stack.
 // Hint: push/pop operations in a stack happen on the same side. Picture a stack of pancakes -- adding and removing of flapjacks always happens from the "top" of the stack. With an array, we can use visualize either the "left" or "right" side of the array as the "top" of the stack, so there are two ways to implement this.
